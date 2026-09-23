@@ -1,0 +1,19 @@
+{
+  "train_micro_batch_size_per_gpu": 16,
+  "gradient_accumulation_steps": 1,
+  "steps_per_print": 20,
+  "optimizer": {
+    "type": "AdamW",
+    "params": {
+      "lr": 3e-4,
+      "betas": [0.9, 0.95],
+      "eps": 1e-8,
+      "weight_decay": 0.01
+    }
+  },
+  "zero_optimization": {
+    "stage": 0
+  },
+  "zero_allow_untested_optimizer": true,
+  "wall_clock_breakdown": false
+}

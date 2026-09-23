@@ -1,0 +1,21 @@
+{
+  "ds_config": "/home/moupriya/mini-zero-llm/ds_configs/zero2.json",
+  "world_size": 4,
+  "steps": 300,
+  "micro_batch_size_per_gpu": 16,
+  "block_size": 128,
+  "n_params": 818048,
+  "elapsed_sec_rank0": 90.47415518760681,
+  "peak_rss_mb_rank0": 605.96484375,
+  "first_loss": 4.224936485290527,
+  "final_loss": 2.437129259109497,
+  "loss_trace_every_log": [
+    4.224936485290527,
+    2.8522768020629883,
+    2.60646390914917,
+    2.5431180000305176,
+    2.478379011154175,
+    2.4185657501220703,
+    2.437129259109497
+  ]
+}

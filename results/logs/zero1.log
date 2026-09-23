@@ -1,0 +1,34 @@
+=== CMD ===
+/home/moupriya/mini-zero-llm/.venv/bin/python -m torch.distributed.run --nproc_per_node=4 /home/moupriya/mini-zero-llm/src/train.py --ds_config /home/moupriya/mini-zero-llm/ds_configs/zero1.json --steps 300 --log_every 50 --metrics_out /home/moupriya/mini-zero-llm/results/raw_zero1.json
+
+=== STDOUT ===
+[2026-09-23 16:56:29,548] [WARNING] [real_accelerator.py:199:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+[2026-09-23 16:56:29,562] [WARNING] [real_accelerator.py:199:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+[2026-09-23 16:56:29,585] [WARNING] [real_accelerator.py:199:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+[2026-09-23 16:56:29,591] [WARNING] [real_accelerator.py:199:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+DeepSpeed deepspeed.ops.comm.deepspeed_shm_comm_op built successfully
+DeepSpeed deepspeed.ops.comm.deepspeed_shm_comm_op built successfully
+DeepSpeed deepspeed.ops.comm.deepspeed_shm_comm_op built successfully
+DeepSpeed deepspeed.ops.comm.deepspeed_shm_comm_op built successfully
+[rank0] step 1/300 loss 4.2249
+[rank0] step 50/300 loss 2.8005
+[rank0] step 100/300 loss 2.6471
+[rank0] step 150/300 loss 2.5169
+[rank0] step 200/300 loss 2.4999
+[rank0] step 250/300 loss 2.4686
+[rank0] step 300/300 loss 2.4371
+[rank 0] DONE steps=300 elapsed_sec=94.269 peak_rss_mb=602.1 tokens_per_sec=6517.5 final_loss=2.4371 first_loss=4.2249
+[rank 2] DONE steps=300 elapsed_sec=94.299 peak_rss_mb=619.9 tokens_per_sec=6515.4 final_loss=2.4800 first_loss=4.2305
+[rank 3] DONE steps=300 elapsed_sec=94.224 peak_rss_mb=612.2 tokens_per_sec=6520.6 final_loss=2.4486 first_loss=4.2113[rank 1] DONE steps=300 elapsed_sec=94.284 peak_rss_mb=611.7 tokens_per_sec=6516.5 final_loss=2.4562 first_loss=4.2226
+
+
+
+=== STDERR (tail) ===
+/home/moupriya/mini-zero-llm/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/moupriya/mini-zero-llm/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/moupriya/mini-zero-llm/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/moupriya/mini-zero-llm/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)

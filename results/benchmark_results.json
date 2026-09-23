@@ -1,0 +1,154 @@
+{
+  "world_size": 4,
+  "steps": 300,
+  "note": "ZeRO stage 3 was smoke-tested at N=2/10 steps and ran without crashing, but the full 300-step/N=4 benchmark run was not completed (deprioritized to save time) -- not included in the numbers below.",
+  "runs": [
+    {
+      "stage": 0,
+      "world_size": 4,
+      "steps": 300,
+      "success": true,
+      "per_rank": [
+        {
+          "rank": 1,
+          "steps": 300,
+          "elapsed_sec": 87.571,
+          "peak_rss_mb": 597.5,
+          "tokens_per_sec": 7016.0,
+          "final_loss": 2.4562,
+          "first_loss": 4.2226
+        },
+        {
+          "rank": 3,
+          "steps": 300,
+          "elapsed_sec": 87.624,
+          "peak_rss_mb": 595.2,
+          "tokens_per_sec": 7011.8,
+          "final_loss": 2.4486,
+          "first_loss": 4.2113
+        },
+        {
+          "rank": 0,
+          "steps": 300,
+          "elapsed_sec": 87.609,
+          "peak_rss_mb": 602.9,
+          "tokens_per_sec": 7013.0,
+          "final_loss": 2.4371,
+          "first_loss": 4.2249
+        },
+        {
+          "rank": 2,
+          "steps": 300,
+          "elapsed_sec": 87.553,
+          "peak_rss_mb": 606.9,
+          "tokens_per_sec": 7017.4,
+          "final_loss": 2.48,
+          "first_loss": 4.2305
+        }
+      ],
+      "max_elapsed_sec_over_ranks": 87.624,
+      "max_peak_rss_mb_over_ranks": 606.9,
+      "aggregate_tokens_per_sec": 28058.2,
+      "mean_final_loss": 2.455475,
+      "mean_first_loss": 4.222325
+    },
+    {
+      "stage": 1,
+      "world_size": 4,
+      "steps": 300,
+      "success": true,
+      "per_rank": [
+        {
+          "rank": 0,
+          "steps": 300,
+          "elapsed_sec": 94.269,
+          "peak_rss_mb": 602.1,
+          "tokens_per_sec": 6517.5,
+          "final_loss": 2.4371,
+          "first_loss": 4.2249
+        },
+        {
+          "rank": 2,
+          "steps": 300,
+          "elapsed_sec": 94.299,
+          "peak_rss_mb": 619.9,
+          "tokens_per_sec": 6515.4,
+          "final_loss": 2.48,
+          "first_loss": 4.2305
+        },
+        {
+          "rank": 3,
+          "steps": 300,
+          "elapsed_sec": 94.224,
+          "peak_rss_mb": 612.2,
+          "tokens_per_sec": 6520.6,
+          "final_loss": 2.4486,
+          "first_loss": 4.2113
+        },
+        {
+          "rank": 1,
+          "steps": 300,
+          "elapsed_sec": 94.284,
+          "peak_rss_mb": 611.7,
+          "tokens_per_sec": 6516.5,
+          "final_loss": 2.4562,
+          "first_loss": 4.2226
+        }
+      ],
+      "max_elapsed_sec_over_ranks": 94.299,
+      "max_peak_rss_mb_over_ranks": 619.9,
+      "aggregate_tokens_per_sec": 26070.0,
+      "mean_final_loss": 2.455475,
+      "mean_first_loss": 4.222325
+    },
+    {
+      "stage": 2,
+      "world_size": 4,
+      "steps": 300,
+      "success": true,
+      "per_rank": [
+        {
+          "rank": 0,
+          "steps": 300,
+          "elapsed_sec": 90.474,
+          "peak_rss_mb": 606.0,
+          "tokens_per_sec": 6790.9,
+          "final_loss": 2.4371,
+          "first_loss": 4.2249
+        },
+        {
+          "rank": 2,
+          "steps": 300,
+          "elapsed_sec": 90.452,
+          "peak_rss_mb": 602.8,
+          "tokens_per_sec": 6792.5,
+          "final_loss": 2.48,
+          "first_loss": 4.2305
+        },
+        {
+          "rank": 3,
+          "steps": 300,
+          "elapsed_sec": 90.369,
+          "peak_rss_mb": 604.8,
+          "tokens_per_sec": 6798.8,
+          "final_loss": 2.4486,
+          "first_loss": 4.2113
+        },
+        {
+          "rank": 1,
+          "steps": 300,
+          "elapsed_sec": 90.419,
+          "peak_rss_mb": 600.2,
+          "tokens_per_sec": 6795.0,
+          "final_loss": 2.4562,
+          "first_loss": 4.2226
+        }
+      ],
+      "max_elapsed_sec_over_ranks": 90.474,
+      "max_peak_rss_mb_over_ranks": 606.0,
+      "aggregate_tokens_per_sec": 27177.2,
+      "mean_final_loss": 2.455475,
+      "mean_first_loss": 4.222325
+    }
+  ]
+}

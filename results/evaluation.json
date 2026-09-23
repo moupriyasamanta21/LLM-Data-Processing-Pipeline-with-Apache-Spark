@@ -1,0 +1,27 @@
+{
+  "ckpt_dir": "checkpoints/eval_run",
+  "prompt": "ROMEO:",
+  "results": [
+    {
+      "checkpoint_tag": "step30",
+      "val_mean_cross_entropy": 3.0569784111446805,
+      "val_perplexity": 21.263212203979492,
+      "prompt": "ROMEO:",
+      "generated_sample": "ROMEO:strllan tcddenea in,nlrolounsee wein\n;\nLeo te t, loe disd iu wsostt\n;,\n\nV y nsenimser se ay g pourarcmyhe r ber s ousil teme s tofren gnr dsl hasotoe h annoaif t dea ssr\n\nC treratmes ht\nV\n\n\nvessilode "
+    },
+    {
+      "checkpoint_tag": "step90",
+      "val_mean_cross_entropy": 2.6387425616935447,
+      "val_perplexity": 13.99559211730957,
+      "prompt": "ROMEO:",
+      "generated_sample": "ROMEO:\n\nEUTon thedeneane inlrolound e we anonse ate thilou wist iu wis tte ase malnsenimese se and anderancmy mou ber s ocisl teme s tofren ghe d, hy sthoe heannoninit isans thet treraners he\n\n\nToressilode "
+    },
+    {
+      "checkpoint_tag": "step150",
+      "val_mean_cross_entropy": 2.525243079220807,
+      "val_perplexity": 12.493931770324707,
+      "prompt": "ROMEO:",
+      "generated_sample": "ROMEO:\n\nE:\nAn thedeneane in rolound e we thonse ane thilou wist ic wis teriale myonsenime cose angr prerancey mou ber s ocorl teme s tofren gre d, hag thoris annonint tisans thet touraners he\n\nHe hes, tode "
+    }
+  ]
+}
